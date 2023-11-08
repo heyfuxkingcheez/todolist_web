@@ -1,0 +1,28 @@
+# GET 미들웨이
+
+###
+GET http://localhost:8080/api/todos
+
+
+# 할 일 순서 추가하기
+###
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+    "value" : "할 일 메모 첫 번째 입니다4."
+}
+
+
+# JWT를 할당한 cookie를 발급 및 조회하는 api 만들기
+###
+POST  http://localhost:8080/set-key
+Content-Type: application/json
+
+{
+    "key": "무슨내용일까요?"
+}
+
+
+###
+GET http://localhost:8080/get-key
